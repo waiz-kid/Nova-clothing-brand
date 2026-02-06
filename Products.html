@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Clothing Brand - Products</title>
+  <link rel="icon" href="Assets/products.png" type="image/png">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body style="margin:0; padding:0; font-family:Arial,sans-serif; background-color:#000; color:#FFD700; overflow-x:hidden;">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color:#111; box-shadow:0 4px 15px rgba(255,215,0,0.3);">
+  <div class="container">
+        <!-- LOGO + BRAND -->
+    <a class="navbar-brand d-flex align-items-center" href="home.html" style="font-weight:bold; font-size:1.8rem; color:#FFD700 !important; gap:10px;">
+      <img src="Assets/logo.png" alt="Nova Clothing Logo" style="height:45px; width:auto;">
+      Nova Clothing
+    </a>
+    <a class="navbar-brand" href="home.html" style="font-weight:bold; font-size:1.8rem; color:#FFD700 !important;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html" style="color:#FFD700;">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="products.html" style="color:#FFD700;">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" style="color:#FFD700;">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html" style="color:#FFD700;">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="location.html" style="color:#FFD700;">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Floating golden circles -->
+  <div style="position:absolute; width:100%; height:100%; top:0; left:0; pointer-events:none; overflow:hidden;">
+    <span style="position:absolute; width:150px; height:150px; border-radius:50%; background:rgba(255,215,0,0.2); top:15%; left:5%; animation:float1 10s infinite alternate;"></span>
+    <span style="position:absolute; width:100px; height:100px; border-radius:50%; background:rgba(255,215,0,0.15); top:65%; left:75%; animation:float2 8s infinite alternate;"></span>
+    <span style="position:absolute; width:200px; height:200px; border-radius:50%; background:rgba(255,215,0,0.1); top:40%; left:35%; animation:float3 12s infinite alternate;"></span>
+  </div>
+</section>
+
+<!-- Products Grid -->
+<section style="padding:5rem 1rem; text-align:center; background-color:#000;">
+  <h2 style="margin-bottom:3rem; font-size:2.5rem; text-shadow:0 0 10px #FFD700;">Our Bestsellers</h2>
+  <!-- logo ADDED (ONLY ADDITION) -->
+  <img src="Assets/logo.png"
+       alt="Nova Clothing Icon"
+       style="width:70px; margin-bottom:1rem; filter:drop-shadow(0 0 12px #FFD700)
+
+  <div class="container">
+    <div class="row justify-content-center" style="gap:2rem; display:flex; flex-wrap:wrap;">
+
+      <!-- Product 1 -->
+      <div class="col-md-3" style="max-width:300px;">
+        <div style="background-color:#111; color:#FFD700; border-radius:20px; overflow:hidden; margin-bottom:2rem; transition:all 0.4s; position:relative;"
+             onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 0 40px #FFD700';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <img src="Assets/img_6.png" style="width:100%; transition:transform 0.5s;"
+               onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+          <div style="padding:1rem;">
+            <h5 style="font-weight:bold;">Hoodie</h5>
+            <p style="font-weight:bold;">KES 1,899</p>
+            <a href="#" style="display:inline-block; background:linear-gradient(135deg,#FFD700,#ffec8b); color:#000; font-weight:bold; padding:0.5rem 1rem; border-radius:8px; text-decoration:none; transition:all 0.3s;"
+               onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px #FFD700';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-3" style="max-width:300px;">
+        <div style="background-color:#111; color:#FFD700; border-radius:20px; overflow:hidden; margin-bottom:2rem; transition:all 0.4s; position:relative;"
+             onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 0 40px #FFD700';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <img src="Assets/img.png" style="width:100%; transition:transform 0.5s;"
+               onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+          <div style="padding:1rem;">
+            <h5 style="font-weight:bold;">Nova caps</h5>
+            <p style="font-weight:bold;">KES 699</p>
+            <a href="#" style="display:inline-block; background:linear-gradient(135deg,#FFD700,#ffec8b); color:#000; font-weight:bold; padding:0.5rem 1rem; border-radius:8px; text-decoration:none; transition:all 0.3s;"
+               onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px #FFD700';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-md-3" style="max-width:300px;">
+        <div style="background-color:#111; color:#FFD700; border-radius:20px; overflow:hidden; margin-bottom:2rem; transition:all 0.4s; position:relative;"
+             onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 0 40px #FFD700';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <img src="Assets/img_4.png" style="width:100%; transition:transform 0.5s;"
+               onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+          <div style="padding:1rem;">
+            <h5 style="font-weight:bold;">Hoodie Suit</h5>
+            <p style="font-weight:bold;">KES 2,499</p>
+            <a href="#" style="display:inline-block; background:linear-gradient(135deg,#FFD700,#ffec8b); color:#000; font-weight:bold; padding:0.5rem 1rem; border-radius:8px; text-decoration:none; transition:all 0.3s;"
+               onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px #FFD700';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!---Product 4-->
+       <div class="col-md-3" style="max-width:300px;">
+        <div style="background-color:#111; color:#FFD700; border-radius:20px; overflow:hidden; margin-bottom:2rem; transition:all 0.4s; position:relative;"
+             onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 0 40px #FFD700';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <img src="Assets/img_5.png" style="width:100%; transition:transform 0.5s;"
+               onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+          <div style="padding:1rem;">
+            <h5 style="font-weight:bold;">Nova Suit</h5>
+            <p style="font-weight:bold;">KES 3,499</p>
+            <a href="#" style="display:inline-block; background:linear-gradient(135deg,#FFD700,#ffec8b); color:#000; font-weight:bold; padding:0.5rem 1rem; border-radius:8px; text-decoration:none; transition:all 0.3s;"
+               onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px #FFD700';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+<!--Product 5-->
+ <div class="col-md-3" style="max-width:300px;">
+        <div style="background-color:#111; color:#FFD700; border-radius:20px; overflow:hidden; margin-bottom:2rem; transition:all 0.4s; position:relative;"
+             onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 0 40px #FFD700';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <img src="Assets/img_7.png" style="width:100%; transition:transform 0.5s;"
+               onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+          <div style="padding:1rem;">
+            <h5 style="font-weight:bold;">T-Shirt</h5>
+            <p style="font-weight:bold;">KES 899</p>
+            <a href="#" style="display:inline-block; background:linear-gradient(135deg,#FFD700,#ffec8b); color:#000; font-weight:bold; padding:0.5rem 1rem; border-radius:8px; text-decoration:none; transition:all 0.3s;"
+               onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px #FFD700';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">Buy Now</a>
+          </div>
+        </div>
+      </div>
+<!---Product 6-->
+       <div class="col-md-3" style="max-width:300px;">
+        <div style="background-color:#111; color:#FFD700; border-radius:20px; overflow:hidden; margin-bottom:2rem; transition:all 0.4s; position:relative;"
+             onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 0 40px #FFD700';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <img src="Assets/img_10.png" style="width:100%; transition:transform 0.5s;"
+               onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+          <div style="padding:1rem;">
+            <h5 style="font-weight:bold;">Polo Shirt</h5>
+            <p style="font-weight:bold;">KES 999</p>
+            <a href="#" style="display:inline-block; background:linear-gradient(135deg,#FFD700,#ffec8b); color:#000; font-weight:bold; padding:0.5rem 1rem; border-radius:8px; text-decoration:none; transition:all 0.3s;"
+               onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px #FFD700';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 7 -->
+      <div class="col-md-3" style="max-width:300px;">
+        <div style="background-color:#111; color:#FFD700; border-radius:20px; overflow:hidden; margin-bottom:2rem; transition:all 0.4s; position:relative;"
+             onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 0 40px #FFD700';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <img src="Assets/img_8.png" style="width:100%; transition:transform 0.5s;"
+               onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+          <div style="padding:1rem;">
+            <h5 style="font-weight:bold;">Black Hoodie</h5>
+            <p style="font-weight:bold;">KES 2,999</p>
+            <a href="#" style="display:inline-block; background:linear-gradient(135deg,#FFD700,#ffec8b); color:#000; font-weight:bold; padding:0.5rem 1rem; border-radius:8px; text-decoration:none; transition:all 0.3s;"
+               onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px #FFD700';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">Buy Now</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 8-->
+      <div class="col-md-3" style="max-width:300px;">
+        <div style="background-color:#111; color:#FFD700; border-radius:20px; overflow:hidden; margin-bottom:2rem; transition:all 0.4s; position:relative;"
+             onmouseover="this.style.transform='scale(1.07)'; this.style.boxShadow='0 0 40px #FFD700';"
+             onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
+          <img src="Assets/img_10.png" style="width:100%; transition:transform 0.5s;"
+               onmouseover="this.style.transform='scale(1.1)';" onmouseout="this.style.transform='scale(1)';">
+          <div style="padding:1rem;">
+            <h5 style="font-weight:bold;">Black Jacket</h5>
+            <p style="font-weight:bold;">KES 14,999</p>
+            <a href="#" style="display:inline-block; background:linear-gradient(135deg,#FFD700,#ffec8b); color:#000; font-weight:bold; padding:0.5rem 1rem; border-radius:8px; text-decoration:none; transition:all 0.3s;"
+               onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 0 15px #FFD700';"
+               onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">Buy Now</a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer style="background-color:#111; color:#FFD700; padding:2rem 0; text-align:center; box-shadow:0 -4px 15px rgba(255,215,0,0.3);">
+  <p>&copy; 2026 Nova Clothing Brand. All Rights Reserved.</p>
+</footer>
+
+<!-- Floating animations -->
+<style>
+@keyframes float1 {0%{transform:translateY(0);}100%{transform:translateY(-50px);}}
+@keyframes float2 {0%{transform:translateY(0);}100%{transform:translateY(-30px);}}
+@keyframes float3 {0%{transform:translateY(0);}100%{transform:translateY(-70px);}}
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

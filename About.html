@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nova Clothing Brand - About</title>
+<link rel="icon" href="Assets/about.png" type="image/png">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+    margin:0;
+    padding:0;
+    font-family:Arial,sans-serif;
+    background-color:#000;
+    color:#FFD700;
+    overflow-x:hidden;
+  }
+  a { text-decoration:none; }
+
+  /* Navbar */
+  .navbar {
+    background-color:#111 !important;
+    box-shadow:0 4px 15px rgba(255,215,0,0.3);
+  }
+  .navbar-brand img { height:45px; width:auto; margin-right:10px; }
+  .nav-link { color:#FFD700 !important; font-weight:bold; transition:0.3s; }
+  .nav-link:hover, .nav-link.active { color:#fff !important; }
+
+  /* Floating golden circles */
+  .floating-circle {
+    position:absolute;
+    border-radius:50%;
+    pointer-events:none;
+  }
+
+  /* About Story Section */
+  .about-section {
+    padding:5rem 1rem;
+    background-color:#000;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:3rem;
+    align-items:center;
+  }
+  .about-text { flex:1; min-width:300px; max-width:600px; }
+  .about-text h2 { font-size:2.5rem; margin-bottom:1.5rem; text-shadow:0 0 10px #FFD700; }
+  .about-text p { font-size:1.2rem; line-height:1.8; margin-bottom:1rem; }
+
+  /* Carousel */
+  .carousel-inner img {
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(255,215,0,0.5);
+    transition:transform 0.5s;
+  }
+  .carousel-inner img:hover { transform:scale(1.05); }
+
+  /* Mission & Vision Section */
+  .mission-section {
+    padding:5rem 1rem;
+    background:linear-gradient(135deg,#111,#222);
+    text-align:center;
+  }
+  .mission-section h2 { font-size:2.5rem; margin-bottom:3rem; text-shadow:0 0 10px #FFD700; }
+  .mission-cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:3rem;
+  }
+  .mission-card {
+    flex:1;
+    min-width:250px;
+    max-width:350px;
+    background-color:#111;
+    padding:2rem;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(255,215,0,0.3);
+    transition:all 0.3s;
+  }
+  .mission-card:hover {
+    transform:scale(1.05);
+    box-shadow:0 0 40px #FFD700;
+  }
+
+  /* Footer */
+  footer {
+    background-color:#111;
+    color:#FFD700;
+    padding:2rem 0;
+    text-align:center;
+    box-shadow:0 -4px 15px rgba(255,215,0,0.3);
+  }
+
+  /* Floating animations */
+  @keyframes float1 {0%{transform:translateY(0);}100%{transform:translateY(-50px);}}
+  @keyframes float2 {0%{transform:translateY(0);}100%{transform:translateY(-30px);}}
+  @keyframes float3 {0%{transform:translateY(0);}100%{transform:translateY(-70px);}}
+
+  /* Responsive */
+  @media(max-width:768px){ .about-section { flex-direction:column; } }
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="home.html">
+      <img src="Assets/logo.png" alt="Nova Clothing Logo"> Nova Clothing
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="location.html">Location</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Floating golden circles -->
+<div style="position:absolute; width:100%; height:100%; top:0; left:0; pointer-events:none; overflow:hidden;">
+  <span class="floating-circle" style="width:150px;height:150px;background:rgba(255,215,0,0.2);top:15%;left:5%;animation:float1 10s infinite alternate;"></span>
+  <span class="floating-circle" style="width:100px;height:100px;background:rgba(255,215,0,0.15);top:65%;left:75%;animation:float2 8s infinite alternate;"></span>
+  <span class="floating-circle" style="width:200px;height:200px;background:rgba(255,215,0,0.1);top:40%;left:35%;animation:float3 12s infinite alternate;"></span>
+</div>
+
+<!-- About Story Section -->
+<section class="about-section">
+
+  <div class="about-text">
+    <h2>Our Story</h2>
+    <p>Founded in 2026, Nova Clothing Brand is dedicated to delivering streetwear with a luxurious golden touch. Our designs merge innovation, comfort, and exclusivity for fashion lovers who want to stand out.</p>
+    <p>We believe fashion is more than clothing—it’s an expression of personality, status, and creativity. Every piece is crafted with precision and designed to shine, literally and metaphorically.</p>
+  </div>
+
+  <!-- Carousel with 10 images -->
+  <div style="flex:1; min-width:300px; max-width:600px; position:relative;">
+    <div id="aboutCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Assets/nova.jpeg" alt="Nova Image 1">
+        </div>
+        <div class="carousel-item"><img src="Assets/img_5.png" alt=""></div>
+        <div class="carousel-item"><img src="Assets/img.png" alt=""></div>
+        <div class="carousel-item"><img src="Assets/img_1.png" alt=""></div>
+        <div class="carousel-item"><img src="Assets/img_2.png" alt=""></div>
+        <div class="carousel-item"><img src="Assets/img_3.png" alt=""></div>
+        <div class="carousel-item"><img src="Assets/img_6.png" alt=""></div>
+        <div class="carousel-item"><img src="Assets/img_7.png" alt=""></div>
+      
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#aboutCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter:invert(100%)"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#aboutCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true" style="filter:invert(100%)"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+</section>
+
+<!-- Mission & Vision Section -->
+<section class="mission-section">
+  <h2>Our Mission & Vision</h2>
+  <div class="mission-cards">
+    <div class="mission-card">
+      <h3>Our Mission</h3>
+      <p>To redefine streetwear fashion with luxury and style that empowers individuality.</p>
+    </div>
+    <div class="mission-card">
+      <h3>Our Vision</h3>
+      <p>To be the leading streetwear brand in Africa known for premium style and innovation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2026 Nova Clothing Brand. All Rights Reserved.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
